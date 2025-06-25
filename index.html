@@ -14,11 +14,9 @@
         <div class="container">
             <h1 class="title">Chemistry Questions & Answers</h1>
             <p class="subtitle">Interactive Learning with AI-Generated Solutions</p>
-            <div class="scoreboard header-row">
-              <span class="score-correct"><span class="score-icon">✅</span> <span id="score-correct">0</span></span>
-              <span class="score-separator">|</span>
-              <span class="score-incorrect"><span class="score-icon">❌</span> <span id="score-incorrect">0</span></span>
-              <span id="api-status" class="api-status"><span class="api-dot"></span> API Status: <span id="api-status-text">Ready to use AI</span></span>
+            <div class="api-status" id="apiStatus">
+                <span class="status-indicator" id="statusIndicator"></span>
+                <span class="status-text" id="statusText">API Status: Ready</span>
             </div>
         </div>
     </header>
@@ -30,9 +28,9 @@
             </div>
             
             <div class="controls">
-                <button class="control-btn" id="markAllBtn" style="display:none">Mark All with AI</button>
-                <button class="control-btn" id="clearMarksBtn" style="display:none">Clear All Marks</button>
-                <div class="stats" style="display:none">
+                <button class="control-btn" id="markAllBtn">Mark All with AI</button>
+                <button class="control-btn" id="clearMarksBtn">Clear All Marks</button>
+                <div class="stats">
                     <span id="markedCount">0</span> / <span id="totalCount">0</span> marked
                 </div>
             </div>
@@ -51,7 +49,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Chemistry Foundation Paper AQA</p>
+            <p>&copy; 2024 Chemistry Learning Platform</p>
         </div>
     </footer>
 
